@@ -1,0 +1,221 @@
+:root {
+    --Rich-black: #04080F;
+    --Davys-gray: #4D5359;
+    --Paynes-gray: #586F7C;
+    --Nyanza: #F0FFCE;
+    --Sage: #CCC9A1;
+    --Dark-slate-gray: #384D48;
+    --Onyx: #3F4045;
+    
+    --Feldgaru: #4E6766;
+    --Myrtle-green: #508484;
+    --Air-force-blue: #4B88A2;
+    --Federal-blue: #090446;
+    --Vanilla: #F8F4A6;
+
+    --Eagle-lake: 'Eagle Lake', serif;
+    --Garamond-font: 'EB Garamond', serif;
+    --Merriweather-font: 'Merriweather', serif;
+    --Noto-serif: 'Noto Serif', serif;
+}
+
+
+body {
+    background-color: var(--Rich-black);
+    height: 100vh;
+}
+/* --------HEADER--------- */
+
+#sectionTop-header {
+    height: 60px;
+    background-color: var(--Davys-gray);
+    border-bottom: 2px solid var(--Air-force-blue);
+    box-shadow: 0px 5px 5px 0px #000;
+}
+
+
+.header-h1 { 
+    font-family: var(--Eagle-lake);
+    color: whitesmoke;
+}
+
+.info-link {
+    color: whitesmoke;
+    font-size: 17px;
+}
+
+.info-link:hover {
+    border-bottom: 1px solid var(--Nyanza);
+    color: violet;
+    transition: 0.5s, border 0.5s ease;
+}
+
+.info-link:hover::after {
+    border-bottom: 1px solid var(--Nyanza);
+    color: violet;
+    transition: all 5s ease-in-out;
+}
+
+
+/* --------MAIN--------- */
+
+.main-text {
+    margin-top: 50px;
+}
+
+.main-h2 {
+    color: white;
+    font-family: var(--Noto-serif);
+    font-size: 46px;
+}
+
+.mainH2 {
+    color: lightslategray;
+    font-size: 36px;
+}
+
+.demonte-text {
+    color: whitesmoke;
+}
+
+
+.demonte-img {
+    margin-top: 120px;
+    float: right;
+    width: 350px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+.herb-span {
+    font-weight: 600;
+}
+
+/* ----------CONTACT------------- */
+
+.bi-github {
+    
+}
+
+.point-div {
+    position: relative;
+}
+
+.point-img {
+    position: absolute;
+    bottom: -230px;
+    left: 300px;
+    height: 100px;
+    width: 100px;
+}
+
+.contact-h2 {
+    font-size: 46px;
+    font-family: var(--Noto-serif);
+}
+
+
+
+
+
+
+
+
+
+/* --------PLANETS-------- */
+
+.circle-container {
+    position: relative;
+}
+
+
+.circle {
+    position: absolute;
+    left: 70px;
+    top: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    /* border-inline: 2px solid purple; */
+    /* background-color: #0CB1C4; */
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.circle-container2 {
+    position: relative;
+}
+
+.circle2 {
+    position: absolute;
+    left: 95px;
+    bottom: -100px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    /* border-inline: 2px solid var(--Davys-gray); */
+    /* background-color: black; */
+    /* animation-name: orbit;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+.moon {
+    width: 65px;
+    height: 65px;
+}
+
+.earth {
+    width: 70px;
+    height: 70px;
+}
+
+.moon { 
+    /* width: 50px; 
+    height: 50px;  */
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    animation: GFG 5s infinite linear; 
+} 
+
+@keyframes GFG { 
+    0% { 
+        transform: rotate(0deg)  
+            translateX(100px) rotate(0deg); 
+    } 
+
+    100% { 
+        transform: rotate(-360deg)  
+            translateX(100px) rotate(360deg); 
+    } 
+} 
+
+
+
+.clear {
+    clear: both;
+}
