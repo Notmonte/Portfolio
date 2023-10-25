@@ -45,19 +45,22 @@ body {
 }
 
 .info-link:hover {
-    border-bottom: 1px solid var(--Nyanza);
+    /* border-bottom: 1px solid var(--Nyanza); */
     color: violet;
     transition: 0.5s, border 0.5s ease;
 }
 
-.info-link:hover::after {
-    border-bottom: 1px solid var(--Nyanza);
-    color: violet;
-    transition: all 5s ease-in-out;
-}
-
 
 /* --------MAIN--------- */
+
+#sectionTop-main {
+    padding-bottom: 200px;
+}
+
+#sectionTop-main-home {
+    padding: 100px;
+}
+
 
 .main-text {
     margin-top: 50px;
@@ -91,10 +94,25 @@ body {
     font-weight: 600;
 }
 
+.about-h2 {
+    font-size: 36px;
+    color: lightslategray;
+}
+
+
+#sectionBottom-main {
+    padding-top: 200px;
+}
+
+
 /* ----------CONTACT------------- */
 
 .bi-github {
-    
+    color: whitesmoke;
+}
+
+.bi-linkedin {
+    color: whitesmoke;
 }
 
 .point-div {
@@ -110,9 +128,11 @@ body {
 }
 
 .contact-h2 {
-    font-size: 46px;
+    color: whitesmoke;
+    font-size: 60px;
     font-family: var(--Noto-serif);
 }
+
 
 
 
