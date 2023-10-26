@@ -90,8 +90,9 @@ body {
     border-radius: 5px;
 }
 
-.herb-span {
-    font-weight: 600;
+.anime-img {
+    width: 500px;
+    height: 500px;
 }
 
 .about-h2 {
@@ -133,6 +134,17 @@ body {
     font-family: var(--Noto-serif);
 }
 
+
+.cpu-parent {
+    position: relative;
+}
+
+.bi-cpu {
+    position: absolute;
+    left: 150px;
+    margin-top: 2px;
+    /* bottom: 250px; */
+}
 
 
 
