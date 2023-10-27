@@ -19,10 +19,14 @@
     --Noto-serif: 'Noto Serif', serif;
 }
 
+* {box-sizing: border-box;}
+
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: var(--Rich-black);
-    height: 100vh;
+    /* height: 100vh; */
 }
 /* --------HEADER--------- */
 
@@ -47,7 +51,7 @@ body {
 .info-link:hover {
     /* border-bottom: 1px solid var(--Nyanza); */
     color: violet;
-    transition: 0.5s, border 0.5s ease;
+    transition: 0.5s border 0.5s ease;
 }
 
 
@@ -83,12 +87,38 @@ body {
 
 
 .demonte-img {
-    margin-top: 120px;
+    /* margin-top: 120px; */
     float: right;
-    width: 350px;
-    height: 500px;
+    max-width: 350px;
+    max-height: 500px;
     border-radius: 5px;
 }
+
+@media (min-width: 768px) {
+    .demonte-img {
+        margin-top: 120px;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .demonte-img {
+
+    }
+
+    .demonte-text {
+        text-align: center;
+        border: 1px solid red;
+        height:
+    }
+
+    .info-nav {
+        justify-content: center;
+    }
+}
+
+
 
 .anime-img {
     width: 500px;
@@ -105,6 +135,13 @@ body {
     padding-top: 200px;
 }
 
+.bi-cpu {
+    color: white;
+}
+
+.learn-item {
+    color: lightslategray;
+}
 
 /* ----------CONTACT------------- */
 
