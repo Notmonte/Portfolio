@@ -6,7 +6,7 @@
     --Sage: #CCC9A1;
     --Dark-slate-gray: #384D48;
     --Onyx: #3F4045;
-    
+
     --Feldgaru: #4E6766;
     --Myrtle-green: #508484;
     --Air-force-blue: #4B88A2;
@@ -94,27 +94,48 @@ body {
     border-radius: 5px;
 }
 
+
+
 @media (min-width: 768px) {
     .demonte-img {
         margin-top: 120px;
     }
+
+    
 }
 
 
 
 @media (max-width: 576px) {
-    .demonte-img {
-
+    .know-text {
+        text-align: center;
     }
 
-    .demonte-text {
+    .know-list {
         text-align: center;
-        border: 1px solid red;
-        height:
+    }
+
+.bi-cpu, .bi-cpu2 {
+    margin-left: 24px;
+}
+
+    .demonte-text {
+        /* text-align: center; */
+        /* border: 1px solid red; */
+        width: 300px;
+    }
+
+    .home-text {
+        margin-right: 800px;
     }
 
     .info-nav {
         justify-content: center;
+    }
+
+    .anime-img {
+        height: 500px;
+        width: 300px;
     }
 }
 
@@ -125,17 +146,38 @@ body {
     height: 500px;
 }
 
+.h2-box {
+    position: relative;
+    background-color: purple;
+    height: 40px;
+    width: 20px;
+}
+
 .about-h2 {
     font-size: 36px;
     color: lightslategray;
 }
 
-
 #sectionBottom-main {
     padding-top: 200px;
 }
 
+.cpu-parent {
+    position: relative;
+}
+
 .bi-cpu {
+    position: absolute;
+    left: 20px;
+    margin-top: 2px;
+    color: white;
+    /* bottom: 250px; */
+}
+
+.bi-cpu2 {
+    position: absolute;
+    left: 165px;
+    margin-top: 2px;
     color: white;
 }
 
@@ -171,21 +213,69 @@ body {
     font-family: var(--Noto-serif);
 }
 
+.know-text {
+    color: white;
+}
 
-.cpu-parent {
+.bi-filetype-html {
+    color: white;
+    margin-left: 10px;
+}
+
+.bi-filetype-css {
+    color: white;
+    margin-left: 20px;
+}
+
+.bi-bootstrap {
+    color: white;
+}
+
+.email-text {
+    color: white;
+}
+
+.bi-envelope-at-fill {
+    color: white;
+}
+
+.know-item {
+    color: lightslategray;
+}
+
+/* ---------Projects---------- */
+
+.venedor-img {
+    border-top: 9px solid var(--Onyx);
+    border-right: 9px solid var(--Onyx);
+    /* border-left: 9px solid var(--Onyx); */
+    border-bottom: 9px solid var(--Onyx);
+    border-radius: 5px;
+    
+}
+
+.venedor-div {
+    transition: 0.5s all ease-in-out;
+}
+
+.venedor-div:hover {
+    transform: scale(1.1); 
+}
+
+.figma-div {
     position: relative;
+    transition: 0.5s all ease-in-out;
 }
 
-.bi-cpu {
+.figma-div:hover {
+    transform: scale(1.1); 
+}
+
+.figma-img {
     position: absolute;
-    left: 150px;
-    margin-top: 2px;
-    /* bottom: 250px; */
+    top: 210px;
+    right: 50px;
 }
-
-
-
-
 
 
 
