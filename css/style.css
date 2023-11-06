@@ -62,7 +62,7 @@ body {
 }
 
 #sectionTop-main-home {
-    padding: 100px;
+    padding: 100px 0;
 }
 
 
@@ -88,7 +88,7 @@ body {
 
 .demonte-img {
     /* margin-top: 120px; */
-    float: right;
+    /* float: right; */
     max-width: 350px;
     max-height: 500px;
     border-radius: 5px;
@@ -101,7 +101,9 @@ body {
         margin-top: 120px;
     }
 
-    
+    /* .learn-list-know {
+        margin-left: 70px;
+    } */
 }
 
 
@@ -115,27 +117,25 @@ body {
         text-align: center;
     }
 
-.bi-cpu, .bi-cpu2 {
+    .bi-cpu, .bi-cpu2 {
     margin-left: 24px;
 }
 
-    .demonte-text {
-        /* text-align: center; */
-        /* border: 1px solid red; */
-        width: 300px;
-    }
+.about-text {
+    width: 300px;
+}
 
-    .home-text {
-        margin-right: 800px;
-    }
+.home-div {
+    text-align: center;
+}
 
     .info-nav {
         justify-content: center;
     }
 
     .anime-img {
-        height: 500px;
-        width: 300px;
+        /* height: 500px; */
+        /* width: 300px; */
     }
 }
 
@@ -148,7 +148,7 @@ body {
 
 .h2-box {
     position: relative;
-    background-color: purple;
+    background-color: var(--Federal-blue);
     height: 40px;
     width: 20px;
 }
@@ -182,17 +182,39 @@ body {
 }
 
 .learn-item {
-    color: lightslategray;
+    color: var(--Air-force-blue);
+}
+/* ----------CONTACT------------- */
+
+
+@media (min-width: 992px) {
+    .learn-list-know {
+        margin-left: 50px;
+    }
 }
 
-/* ----------CONTACT------------- */
+.border-div {
+    height: 40px;
+    width: 30px;
+    color: white;
+}
 
 .bi-github {
     color: whitesmoke;
+    transition: 0.3s;
+}
+
+.bi-github:hover {
+    color: green;
 }
 
 .bi-linkedin {
     color: whitesmoke;
+    transition: 0.3s;
+}
+
+.bi-linkedin:hover {
+    color: green;
 }
 
 .point-div {
@@ -200,9 +222,6 @@ body {
 }
 
 .point-img {
-    position: absolute;
-    bottom: -230px;
-    left: 300px;
     height: 100px;
     width: 100px;
 }
@@ -213,9 +232,18 @@ body {
     font-family: var(--Noto-serif);
 }
 
-.know-text {
+.know-text, .bi-bootstrap, .email-text, .bi-envelope-at-fill {
     color: white;
 }
+
+.bi-envelope-at-fill {
+    transition: 0.3s
+}
+
+.bi-envelope-at-fill:hover {
+    color: green;
+} 
+
 
 .bi-filetype-html {
     color: white;
@@ -227,61 +255,93 @@ body {
     margin-left: 20px;
 }
 
-.bi-bootstrap {
-    color: white;
-}
-
-.email-text {
-    color: white;
-}
-
-.bi-envelope-at-fill {
-    color: white;
-}
-
 .know-item {
-    color: lightslategray;
+    color: var(--Air-force-blue);
 }
+
+@media (max-width: 576px) {
+    .contact-h2 {
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .bi-github {
+        margin-left: 60px;
+    }
+
+    .bi-envelope-at-fill {
+        margin-left: 10px;
+    }
+
+    .email-text {
+        margin-left: 70px;
+    }
+}
+
 
 /* ---------Projects---------- */
 
-.venedor-img {
-    border-top: 9px solid var(--Onyx);
-    border-right: 9px solid var(--Onyx);
-    /* border-left: 9px solid var(--Onyx); */
-    border-bottom: 9px solid var(--Onyx);
-    border-radius: 5px;
+    .venedor-img, .figma-img {
+        border-radius: 5px;
+    }
+
+
+    .figma-div {
+        position: relative;
+        transition: 0.5s all ease-in-out;
+    }
     
+    .figma-div:hover {
+        transform: scale(0.9); 
+    }
+    
+    .venedor-div {
+        transition: 0.5s all ease-in-out;
+    }
+    
+    .venedor-div:hover {
+        transform: scale(0.9); 
+    }
+
+    .photo-h2 {
+        color: white;
+    }
+
+
+/* ---------Footer--------- */
+
+#footerTop-section {
+    padding-top: 80px;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Vanilla);
 }
 
-.venedor-div {
-    transition: 0.5s all ease-in-out;
+    .colophon {
+    color: red;
 }
 
-.venedor-div:hover {
-    transform: scale(1.1); 
+@media (min-width: 768px) {
+    .footer-line {
+        width: 950px;
+        height: 2px;
+        background-color: blue;
+    }
 }
 
-.figma-div {
-    position: relative;
-    transition: 0.5s all ease-in-out;
-}
 
-.figma-div:hover {
-    transform: scale(1.1); 
-}
-
-.figma-img {
-    position: absolute;
-    top: 210px;
-    right: 50px;
-}
 
 
 
 
 
 /* --------PLANETS-------- */
+
+/* got code from different sources to get animation to work
+https://stackoverflow.com/questions/16771225/css3-rotate-animation
+https://codepen.io/teerapuch/pen/vLJXeR
+*/
 
 .circle-container {
     position: relative;
@@ -353,8 +413,8 @@ body {
 }
 
 .moon { 
-    /* width: 50px; 
-    height: 50px;  */
+    width: 50px; 
+    height: 50px; 
     display: block; 
     margin-left: auto; 
     margin-right: auto; 
@@ -372,7 +432,6 @@ body {
             translateX(100px) rotate(360deg); 
     } 
 } 
-
 
 
 .clear {
