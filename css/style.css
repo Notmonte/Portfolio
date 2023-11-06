@@ -278,7 +278,6 @@ body {
     }
 }
 
-
 /* ---------Projects---------- */
 
     .venedor-img, .figma-img {
@@ -311,15 +310,14 @@ body {
 /* ---------Footer--------- */
 
 #footerTop-section {
-    padding-top: 80px;
+    padding-top: 120px;
     height: 90px;
-    margin: 0;
-    padding: 0;
     background-color: var(--Vanilla);
 }
 
     .colophon {
     color: red;
+    font-size: 20px;
 }
 
 @media (min-width: 768px) {
