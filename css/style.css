@@ -172,10 +172,6 @@ body {
     color: lightslategray;
 }
 
-#sectionBottom-main {
-    padding-top: 200px;
-}
-
 .cpu-parent {
     position: relative;
 }
@@ -404,7 +400,23 @@ body {
     background-color: #e7718b;
 }
 
+.d-img {
+    padding: 3px;
+    transition: 0.5s;
+}
 
+.d-img:hover {
+    background-color: #39628e;
+}
+
+.f-img {
+    padding: 3px;
+    transition: 0.5s;
+}
+
+.f-img:hover {
+    background-color: #392721;
+}
 
 
 
