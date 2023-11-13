@@ -373,54 +373,76 @@ body {
     padding: 0 10px;
 }
 
+
 .git-img {
     padding: 3px;
     transition: 0.5s;
 }
 
-.git-img:hover {
-    background-color: white;
-}
-
-.r-img {
+.git-img2 {
     padding: 3px;
     transition: 0.5s;
 }
 
-.r-img:hover {
-    background-color: #df473a;
-}
-
-.b-img {
+.git-img3 {
     padding: 3px;
     transition: 0.5s;
 }
 
-.b-img:hover {
-    background-color: #e7718b;
-}
 
-.d-img {
+.git-img4 {
     padding: 3px;
     transition: 0.5s;
 }
 
-.d-img:hover {
-    background-color: #39628e;
-}
 
-.f-img {
+.git-img5 {
     padding: 3px;
     transition: 0.5s;
 }
 
-.f-img:hover {
-    background-color: #392721;
+
+    .git-img:hover {
+        background-color: white;
+    }
+
+    .git-img2:hover {
+        background-color: #e7718b;
+    }
+    
+    .git-img3:hover {
+        background-color: #df473a;
+    }
+    
+    .git-img4:hover {
+        background-color: #39628e;
+    }
+
+    .git-img5:hover {
+        background-color: #392721;
+    }
+
+@media (max-width: 576px) {
+    .git-img {
+        background-color: white;
+    }
+
+    .git-img2 {
+        background-color: #e7718b;
+    }
+    
+    .git-img3 {
+        background-color: #df473a;
+    }
+    
+    .git-img4 {
+        background-color: #39628e;
+    }
+
+    .git-img5 {
+        background-color: #392721;
+    }
 }
-
-
-
-
 
 
 
@@ -430,11 +452,11 @@ body {
 
 /* ---------Footer--------- */
 
-#footerTop-section {
+/* #footerTop-section {
     padding-top: 120px;
     height: 90px;
     background-color: var(--Vanilla);
-}
+} */
 
     .colophon {
     color: red;
